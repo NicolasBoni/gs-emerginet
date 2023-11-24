@@ -1,4 +1,4 @@
-# gs-emerginet
+# GS-emerginet
 Projeto gs
 
 # grupo
