@@ -7,6 +7,7 @@ import Logo2 from '../../img/medical.png';
 const NavBar = () => {
   const navigate = useNavigate();
   const { signout, user } = useAuth();
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controle do menu hambúrguer
  
 
   return (
