@@ -1,0 +1,33 @@
+
+$footer-background-color: #333;
+$footer-text-color: white;
+$footer-padding: 40px;
+$footer-padding-mobile: 20px;
+$footer-content-max-width: 1200px;
+$footer-content-padding: 20px;
+$footer-content-padding-mobile: 10px;
+$breakpoint-mobile: 600px; 
+
+
+.footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  text-align: center;
+  padding: $footer-padding;
+}
+
+.footer-content {
+  max-width: $footer-content-max-width;
+  margin: 0 auto;
+  padding: 0 $footer-content-padding;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .footer {
+    padding: $footer-padding-mobile; 
+  }
+
+  .footer-content {
+    padding: 0 $footer-content-padding-mobile;
+  }
+}

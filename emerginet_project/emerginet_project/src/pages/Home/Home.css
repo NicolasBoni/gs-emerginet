@@ -1,0 +1,224 @@
+.home-container {
+  color: #212529;
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.frst-section {
+  display: flex;
+}
+
+.frst-div {
+  margin: 8px;
+}
+
+.img-frst {
+  width: 80%;
+  margin: 8px;
+  margin-bottom: 15px;
+}
+
+.mid-div {
+  margin: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 5%;
+}
+
+.mid-box1 {
+  display: block;
+  color: rgb(1, 85, 60);
+  margin: auto;
+  font-size: 36px;
+  padding: 50px;
+}
+
+.mid-box2 {
+  background-color: rgb(0, 50, 44);
+  color: white;
+  padding: 45px;
+  border: 1px solid black;
+}
+
+.last-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn1 {
+  padding: 10px;
+  background-color: rgb(0, 50, 44);
+  border-radius: 5px;
+}
+
+.btn1 p {
+  font-size: 20px;
+  color: white;
+}
+.btn1 p:hover {
+  color: rgb(0, 50, 44);
+}
+
+.sec-div {
+  margin: 10px;
+  list-style: none;
+}
+
+.box-sec {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.box-sec h2 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.box-sec p {
+  color: rgb(131, 131, 131);
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
+.advantages-section {
+  margin: 40px 0;
+  height: auto;
+  width: auto;
+}
+
+.advantages-title {
+  color: rgb(1, 85, 60);
+  padding: 10px;
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.advant-div {
+  padding: 1%;
+  display: flex;
+  gap: 5%;
+}
+
+.box-vant {
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+.img-vant img {
+  width: 160px;
+}
+
+.text-box-vant {
+  padding: 10px;
+}
+
+.text-box-vant h1 {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1500px) {
+  .img-frst img {
+    width: 60vw;
+  }
+  .advantages-section {
+    margin-top: 0px;
+  }
+  .box-sec p {
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .mid-div {
+    margin: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 5%;
+  }
+  .mid-box1 {
+    display: block;
+    color: rgb(1, 85, 60);
+    margin: auto;
+    font-size: 28px;
+    padding: 50px;
+  }
+  .mid-box2 {
+    background-color: rgb(0, 50, 44);
+    color: white;
+    padding: 45px;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+  .mid-box1, .mid-box2, .box-sec {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .frst-section, .advant-div, .last-div {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .box-sec {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .mid-box1, .mid-box2 {
+    width: 100%;
+    text-align: center;
+  }
+  .img-vant img {
+    width: 100%;
+  }
+  .img-frst {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
+  }
+  .btn1 p {
+    font-size: 16px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .mid-box1, .mid-box2, .text-box-vant h1 {
+    font-size: 36px;
+  }
+  .advantages-title, .box-sec h2 {
+    font-size: 32px;
+  }
+  .btn1 {
+    padding: 10px;
+    font-size: 18px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .mid-div {
+    display: unset;
+  }
+}/*# sourceMappingURL=Home.css.map */

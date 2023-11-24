@@ -1,0 +1,273 @@
+// Definição de variáveis
+$color-primary: rgb(0, 50, 44);
+$color-secondary: rgb(1, 85, 60);
+$color-text: #212529;
+$color-text-light: rgb(131, 131, 131);
+$color-text-dark: rgb(0, 0, 0);
+$color-background: white;
+$font-family-default: 'Arial', sans-serif;
+$font-size-large: 36px;
+$font-size-medium: 28px;
+$font-size-small: 20px;
+$font-size-xsmall: 16px;
+$font-size-xxsmall: 14px;
+$margin-standard: 8px;
+$margin-large: 15px;
+$padding-standard: 10px;
+$padding-large: 50px;
+$padding-xlarge: 45px;
+$gap-standard: 5%;
+$img-width-large: 80%;
+$img-width-mobile: 100%;
+$border-standard: 1px solid black;
+$border-radius-standard: 5px;
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 601px;
+$max-width-tablet: 1500px;
+$max-width-content: 1200px;
+
+// Estilos
+.home-container {
+  color: $color-text;
+  font-family: $font-family-default;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin: 0 auto;
+  padding: $padding-standard;
+}
+
+.frst-section {
+  display: flex;
+}
+
+.frst-div {
+  margin: $margin-standard;
+}
+
+.img-frst {
+  width: $img-width-large;
+  margin: $margin-standard;
+  margin-bottom: $margin-large;
+}
+
+.mid-div {
+  margin: $margin-standard;
+  margin-top: $margin-large;
+  margin-bottom: $margin-large;
+  display: flex;
+  gap: $gap-standard;
+}
+
+.mid-box1 {
+  display: block;
+  color: $color-secondary;
+  margin: auto;
+  font-size: $font-size-large;
+  padding: $padding-large;
+}
+
+.mid-box2 {
+  background-color: $color-primary;
+  color: $color-background;
+  padding: $padding-xlarge;
+  border: $border-standard;
+}
+
+.last-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: $margin-standard;
+  margin-top: $margin-large;
+  margin-bottom: $margin-large;
+}
+
+.btn1 {
+  padding: $padding-standard;
+  background-color: $color-primary;
+  border-radius: $border-radius-standard;
+}
+
+.btn1 p {
+  font-size: $font-size-small;
+  color: $color-background;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.sec-div {
+  margin: $padding-standard;
+  list-style: none;
+}
+
+.box-sec {
+  margin-bottom: $margin-large;
+  padding: $padding-standard;
+  border: $border-standard;
+  border-radius: $border-radius-standard;
+}
+
+.box-sec h2 {
+  color: $color-text-dark;
+  font-size: $font-size-medium;
+  padding-top: $margin-large;
+  padding-right: $margin-large;
+  padding-bottom: $padding-standard;
+}
+
+.box-sec p {
+  color: $color-text-light;
+  font-size: $font-size-small;
+  padding-top: $padding-standard;
+  padding-right: $margin-large;
+  padding-bottom: $padding-large;
+}
+
+.advantages-section {
+  margin: 40px 0;
+  height: auto;
+  width: auto;
+}
+
+.advantages-title {
+  color: $color-secondary;
+  padding: $padding-standard;
+  font-size: 40px;
+  margin-bottom: $margin-large;
+  margin-left: $padding-standard;
+  text-align: left;
+}
+
+.advant-div {
+  padding: 1%;
+  display: flex;
+  gap: $gap-standard;
+}
+
+.box-vant {
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+.img-vant img {
+  width: 160px;
+}
+
+.text-box-vant {
+  padding: $padding-standard;
+}
+
+.text-box-vant h1 {
+  padding-bottom: $padding-standard;
+}
+
+// Media queries
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $max-width-tablet) {
+  .img-frst img {
+    width: 60vw;
+  }
+
+  .advantages-section {
+    margin-top: 0px;
+  }
+
+  .box-sec p {
+    font-size: $font-size-small;
+    color: $color-text-light;
+    padding-top: $padding-standard;
+    padding-right: $padding-standard;
+    padding-bottom: $padding-standard;
+  }
+
+  .mid-div {
+    margin: $margin-standard;
+    margin-top: $margin-large;
+    margin-bottom: $margin-large;
+    display: flex;
+    gap: $gap-standard;
+  }
+
+  .mid-box1 {
+    display: block;
+    color: $color-secondary;
+    margin: auto;
+    font-size: $font-size-medium;
+    padding: $padding-large;
+  }
+
+  .mid-box2 {
+    background-color: $color-primary;
+    color: $color-background;
+    padding: $padding-xlarge;
+    font-size: $font-size-xsmall;
+    border: $border-standard;
+  }
+
+  .mid-box1, .mid-box2, .box-sec {
+    padding: $padding-standard;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .frst-section, .advant-div, .last-div {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .box-sec {
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .mid-box1, .mid-box2 {
+    width: $img-width-mobile;
+    text-align: center;
+  }
+
+  .img-vant img {
+    width: $img-width-mobile;
+  }
+
+  .img-frst {
+    width: $img-width-mobile;
+    margin: 0px;
+    margin-bottom: 0px;
+  }
+
+  .btn1 p {
+    font-size: $font-size-xsmall;
+  }
+
+  body {
+    font-size: $font-size-xxsmall;
+  }
+
+  .mid-box1, .mid-box2, .text-box-vant h1 {
+    font-size: $font-size-large;
+  }
+
+  .advantages-title, .box-sec h2 {
+    font-size: 32px;
+  }
+
+  .btn1 {
+    padding: $padding-standard;
+    font-size: 18px;
+  }
+
+  img {
+    max-width: $img-width-mobile;
+    height: auto;
+  }
+
+  .mid-div {
+    display: unset;
+  }
+}

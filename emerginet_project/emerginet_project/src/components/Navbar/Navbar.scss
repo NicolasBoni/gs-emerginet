@@ -1,0 +1,84 @@
+// Definição de variáveis
+$nav-background-color: #053a20;
+$nav-text-color: rgb(255, 255, 255);
+$menu-hover-color: #053a20;
+$hamburger-span-color: white;
+$logo-img-width: 120px;
+$users-width: 25vw;
+$users-gap: 4vw;
+$menu-item-padding-mobile: 40px;
+$breakpoint-mobile: 768px; 
+
+// Estilos
+.nav {
+  background: $nav-background-color;
+  color: $nav-text-color;
+  padding: 0px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: $logo-img-width;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    color: $menu-hover-color;
+  }
+}
+
+.users {
+  width: $users-width;
+  gap: $users-gap;
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: $hamburger-span-color;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: $nav-background-color;
+    padding: 10px;
+  }
+
+  .menu-item {
+    padding-left: $menu-item-padding-mobile;
+    display: flex;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}

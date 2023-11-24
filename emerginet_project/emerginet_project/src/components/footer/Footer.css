@@ -1,0 +1,21 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer-content {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
